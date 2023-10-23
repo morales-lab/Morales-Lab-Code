@@ -1,0 +1,4 @@
+docker run -it -v /Users/yugenuni/Library/CloudStorage/OneDrive-UniversityofOtago/Masters_PhD-LAPTOP-IT51CC03/Pipeline:/my_files mmbumcu/deepvirfinder dvf.py -i /my_files/virsorter/novaseq/scaffolds/S51_novaseq_scaffolds.fasta -o /my_files/DeepVirFinder/dvf_novaseq_results -l 10000 -c 2
+
+Then to extract sequences:
+seqtk subseq /Users/yugenuni/Desktop/vs2_output_novaseq/S1_novaseq_scaffolds.fasta ~/Desktop/S1_novaseq_extract.txt > ~/Desktop/S1_dvf_extracted.fasta

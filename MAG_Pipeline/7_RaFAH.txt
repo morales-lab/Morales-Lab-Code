@@ -1,0 +1,10 @@
+RaFAH
+docker run -v /Users/yugenuni/Downloads:/my_files fhcoutinho/rafah perl RaFAH.pl --predict --genomes_dir /my_files/TS3_Toy_Genomes.fasta --extension .fasta --file_prefix RaFAH_1
+
+
+singularity exec --bind "/nesi/nobackup/nesi00458/yugen/MOTS/MOTS_viromes_2018/hiseq_processing/phage_host/phage:/var/phage"
+
+RaFAH.sif perl /bin/RaFAH.pl --predict --threads 24 --genomes_dir /var/phage/phage --extension .fasta --file_prefix RaFAH_1 --output_dir/var/phage/output
+
+"/nesi/nobackup/nesi00458/yugen/MOTS/MOTS_viromes_2018/hiseq_processing/phage_host/phage:/var/phage,\
+/nesi/nobackup/nesi00458/yugen/MOTS/MOTS_viromes_
