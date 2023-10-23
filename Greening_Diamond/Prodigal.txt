@@ -1,0 +1,1 @@
+prodigal -i my.genome.fna -o my.genes -a my.proteins.faa
